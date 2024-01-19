@@ -8,6 +8,20 @@
   line-height: 1.5em;
 }
 
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+img {
+  display: none;
+}
+
 p {
   text-align: justify;
   font-weight: 500;
@@ -116,4 +130,86 @@ button a {
 
 #trust {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 760px) {
+
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  header {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .menu-big {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-list {
+    color: #5a5a5a;
+    align-items: center;
+  }
+
+  .menu-sign {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-sing
+
+  .content-principal {
+    max-width: 55%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    align-self: center;
+    margin-left: 10px;
+    display: block;
+    width: 30%;
+    height: 35%;
+  }
+
+  .content-second {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .content-second svg {
+    margin: 5px;
+  }
+
+  .content-second p {
+    text-align: center;
+    font-size: .8em
+  }
+
+  section {
+    display: flex;
+  }
+
+  #menu-hidden {
+    max-width: 350px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  
 }
