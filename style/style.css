@@ -132,6 +132,10 @@ button a {
   margin-bottom: 20px;
 }
 
+.menu-big {
+  display: none;
+}
+
 @media screen and (min-width: 760px) {
 
   .container {
@@ -164,8 +168,6 @@ button a {
     display: flex;
     align-items: center;
   }
-
-  #menu-sing
 
   .content-principal {
     max-width: 55%;
