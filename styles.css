@@ -77,3 +77,26 @@ button#tff > a {
 #rating > span {
     margin: 0 5px 0 10px;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+#companies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.companie-container {
+    margin: 10px;
+}
