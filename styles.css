@@ -125,10 +125,22 @@ footer > p {
     color: #646464;
 }
 
+#head > #close-page {
+    cursor: pointer;
+}
+
 .toggle-content {
     display: flex;
     text-align: justify;
     margin-bottom: 5px;
 }
 
-.toggle-content > svg {
+.toggle-content > p > i {
+    font-size: 1.8em;
+    margin-right: 12px;
+    color: rgba(69, 170, 229, 0.488);
+}
+
+#toggle-nav {
+    display: none;
+}
