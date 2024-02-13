@@ -4,6 +4,10 @@
     padding: 0; margin: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;
 }
 
+#hero {
+    display: none;
+}
+
 p {
     line-height: 1.5em;
     color: #484848;
@@ -15,7 +19,7 @@ a {
 }
 
 #container-principal {
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 nav {
@@ -30,11 +34,11 @@ nav {
     Cursor: pointer;
 }
 
-#menu > #menu-icon {
+#menu  #menu-icon {
     cursor: pointer;
 }
 
-#menu > #menu-icon > i {
+#menu  #menu-icon  i {
     font-size: 22px;
     font-weight: 600;
 }
@@ -49,7 +53,7 @@ main h1 {
     margin-bottom: 10px;
 }
 
-main > h1 > span {
+main  h1  span {
     color: rgb(255, 179, 0);
     text-shadow: 0  0 9px #d6d6d6;
 }
@@ -62,9 +66,10 @@ button#tff {
     border-radius: 5px;
     padding: 20px 50px;
     margin: 10px 0 25px 0;
+    max-width: 50%;
 }
 
-button#tff > a {
+button#tff  a {
     color: #fff;
     font-size: 1.1em;
     font-weight: bold;
@@ -75,7 +80,7 @@ button#tff > a {
     align-items: center;
 }
 
-#rating > span {
+#rating  span {
     margin: 0 5px 0 10px;
 }
 
@@ -83,10 +88,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
-footer > p {
+footer  p {
     text-align: center;
 }
 
@@ -106,12 +111,16 @@ footer > p {
     display: flex;
     flex-direction: column;
     padding: 20px 40px;
+    max-width: 400px;
 
     position: absolute;
     top: 50px;
+    left: 50%;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 30px #0000009b;
+
+    transform: translateX(-50%);
 }
 
 #head {
@@ -121,11 +130,11 @@ footer > p {
     margin-bottom: 10px;
 }
 
-#head > #page-name {
+#head  #page-name {
     color: #646464;
 }
 
-#head > #close-page {
+#head  #close-page {
     cursor: pointer;
 }
 
@@ -135,7 +144,7 @@ footer > p {
     margin-bottom: 5px;
 }
 
-.toggle-content > p > i {
+.toggle-content  p  i {
     font-size: 1.8em;
     margin-right: 12px;
     color: rgba(69, 170, 229, 0.488);
@@ -143,4 +152,35 @@ footer > p {
 
 #toggle-nav {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    #container-principal {
+        margin: 0 10%;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #text {
+        width: 50%;
+    }
+
+    #imagem {
+        width: 35%;
+    }
+
+    #hero {
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
 }
