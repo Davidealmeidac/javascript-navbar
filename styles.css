@@ -4,6 +4,10 @@
     padding: 0; margin: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;
 }
 
+body {
+    background-color: rgba(253, 217, 222, 0.495);
+}
+
 #hero {
     display: none;
 }
@@ -32,7 +36,7 @@ nav {
 
 #logo {
     Cursor: pointer;
-}
+}   
 
 #menu  #menu-icon {
     cursor: pointer;
@@ -111,7 +115,7 @@ footer  p {
     display: flex;
     flex-direction: column;
     padding: 20px 40px;
-    max-width: 400px;
+    width: 100%;
 
     position: absolute;
     top: 50px;
@@ -140,17 +144,36 @@ footer  p {
 
 .toggle-content {
     display: flex;
-    text-align: justify;
+    flex-direction: column;
     margin-bottom: 5px;
 }
 
-.toggle-content  p  i {
+.toggle-content p {
+    margin-left: 47px;
+}
+
+.toggle-content h3 {
+    color: rgba(69, 170, 229, 0.488);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.toggle-content  h3  i {
     font-size: 1.8em;
     margin-right: 12px;
     color: rgba(69, 170, 229, 0.488);
 }
 
 #toggle-nav {
+    display: none;
+}
+
+#menu-items {
+    display: none;
+}
+
+#subscribe {
     display: none;
 }
 
@@ -182,5 +205,70 @@ footer  p {
 
     footer {
         margin-top: 50px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-items {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-self: center;
+        margin: auto;
+    }
+
+
+    #menu-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #menu-list li {
+        display: inline-block;
+        margin: 0 14px;
+        color: #484848;
+        font-size: 1.1em;
+        font-weight: 500;
+        cursor: pointer;
+
+        transition: all .4s;
+    }
+
+    #menu-list li:hover {
+        color: #858484;
+    }
+
+    #close-page {
+        margin-left: auto;
+    }
+
+    #page-name {
+        display: none;
+    }
+
+    #subscribe {
+        display: flex;
+        align-items: center;
+    }
+
+    #subscribe button {
+        border: none;
+        background-color: #000;
+        color: #fff;
+        padding: 15px 25px;
+        border-radius: 7px;
+        margin-left: 15px;
+    }
+
+    #subscribe a {
+        color: #646464;
+    }
+
+    #toggle-nav {
+        max-width: 500px;
+        top: 70px;
     }
 }
